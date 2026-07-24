@@ -1,0 +1,15 @@
+{
+  "total_revenue": 168230.405,
+  "completed_orders": 3540,
+  "average_order_value": 47.52271327683616,
+  "on_time_rate": 0.27172374752335127,
+  "repeat_customer_rate": 0.8281417830290011,
+  "top_category": "Meat & Seafood",
+  "top_category_revenue": 49198.5575,
+  "top_store": "FreshRoute Oakville 1",
+  "top_store_revenue": 9216.723,
+  "high_discount_avg_qty": 1.9799054373522458,
+  "no_discount_avg_qty": 1.5291399229781772,
+  "short_distance_on_time": 0.6426426426426426,
+  "long_distance_on_time": 0.03610675039246468
+}
