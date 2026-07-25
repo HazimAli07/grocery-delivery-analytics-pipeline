@@ -13,7 +13,19 @@
 
 The customer transformation lowercases and trims email values, standardizes city and loyalty labels, parses registration dates, replaces invalid ages with the valid median, and deduplicates on `CustomerID`. The new customer-integration validation notebook independently confirms unique Silver customer IDs, reconciles each customer's Gold order count, and recomputes the repeat-customer KPI from `customer_behavior_gold`.
 
-All three pipeline notebooks completed successfully in Databricks. The Gold assertions confirmed unique order rows and non-negative net revenue. The final integrated output contained **3,636 completed orders**, **$172,835.74 net revenue**, an **average order value of $47.53**, and an **83.32% repeat-customer rate**. The published dashboard displays the same rounded KPI values, confirming that the report, dashboard, and Gold tables are synchronized. Hazim's validation notebook must be run after Gold and must print `HAZIM_CUSTOMER_VALIDATION_PASSED` before this PR is approved.
+All three main pipeline notebooks completed successfully in Databricks. The Gold assertions confirmed unique order rows and non-negative net revenue. The final integrated output contained **3,636 completed orders**, **$172,835.74 net revenue**, an **average order value of $47.53**, and an **83.32% repeat-customer rate**. The published dashboard displays the same rounded KPI values, confirming that the report, dashboard, and Gold tables are synchronized.
+
+The separate customer-integration notebook is supplementary validation code. Its structure and Python syntax were checked, but this document does not claim that it was executed in Databricks. Under the team's original Markdown-review workflow, approval is based on checking this explanation against the already verified Silver and Gold logic and published KPI results.
+
+## Reviewer verification checklist
+
+Before approving, Shreyansh should confirm that:
+
+- the owner is Hazim Ali and the review is submitted from Shreyansh's own GitHub account;
+- the documented customer cleaning rules match the Silver notebook;
+- the customer joins and repeat-customer calculation match the Gold notebook;
+- the four stated business results match the verified dashboard and report; and
+- the text distinguishes previously verified Databricks results from supplementary code that was not live-run.
 
 ## Conclusion
 
