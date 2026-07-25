@@ -22,6 +22,7 @@ notebooks/
   01_bronze_generation.ipynb
   02_silver_processing.ipynb
   03_gold_eda.ipynb
+  04_hazim_customer_integration_validation.ipynb
 dashboard/
   dashboard_queries.sql
   DASHBOARD_BUILD.md
@@ -39,13 +40,14 @@ data/
 
 ## Run instructions
 
-1. In Databricks, import all three files from `notebooks/`.
+1. In Databricks, import the three pipeline notebooks and any owner-validation notebooks from `notebooks/`.
 2. Attach a cluster that supports Unity Catalog and Delta tables.
 3. Run the notebooks in numeric order without skipping cells.
-4. Confirm the final assertion message in every notebook.
-5. Open Databricks SQL and run the statements in `dashboard/dashboard_queries.sql`.
-6. Follow `dashboard/DASHBOARD_BUILD.md` to assemble and verify the native dashboard.
-7. Export the finished report from `report/` and submit this repository URL: https://github.com/HazimAli07/grocery-delivery-analytics-pipeline
+4. After Gold passes, run `04_hazim_customer_integration_validation.ipynb` and confirm `HAZIM_CUSTOMER_VALIDATION_PASSED`.
+5. Confirm the final assertion or validation message in every notebook.
+6. Open Databricks SQL and run the statements in `dashboard/dashboard_queries.sql`.
+7. Follow `dashboard/DASHBOARD_BUILD.md` to assemble and verify the native dashboard.
+8. Export the finished report from `report/` and submit this repository URL: https://github.com/HazimAli07/grocery-delivery-analytics-pipeline
 
 ## Data relationships
 
