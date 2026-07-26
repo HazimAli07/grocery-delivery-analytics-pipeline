@@ -1,23 +1,30 @@
-# Team Contributions and GitHub Workflow
+# Team Contributions and GitHub Record
 
-The instructor will inspect commit and pull-request history. Every member must work through their own GitHub account. Do not rewrite author names or submit all work from Hazim's account.
+GitHub identities below come from the actual commit and pull-request history. Integration corrections were committed by the account that performed them; no teammate identity, commit, review, or execution was fabricated.
 
-| Member | Branch | Required meaningful change | Reviews |
+| Member | GitHub account | Responsibility | Genuine pull-request record |
 |---|---|---|---|
-| Hazim Ali | feature/customers-integration | Validate customer cleaning, customer Gold logic, README and final integration | Shreyansh |
-| Mannan | feature/store-performance | Validate store generation/cleaning and store dashboard query | Maheshwar |
-| Maheshwar | feature/product-performance | Validate product rules and product/category Gold analysis | Mannan |
-| Sweta | feature/order-trends | Validate order timestamps/status and monthly/weekend analysis | Omar |
-| Omar Leopoldo | feature/discount-revenue | Validate order-item cleaning, revenue formulas, and discount analysis | Sweta |
-| Shreyansh Pankaj | feature/delivery-performance | Validate delivery cleaning, distance bands, and on-time analysis | Hazim |
+| Hazim Ali | `HazimAli07` | Customers and final integration | [#1 customer validation](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/1), [#4 integration clarification](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/4) |
+| Mannan | `Mannan1398` | Store performance | [#7 store-performance notebook](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/7) |
+| Maheshwar | `maheshwartandon` | Product and category performance | [#6 product-performance contribution](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/6) |
+| Sweta | `shwetachd1` | Order and monthly trends | [#2 order-trend review](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/2), [#5 order-trend code](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/5) |
+| Omar Leopoldo | `OmarLeoR` | Discount and revenue analysis | [#8 discount/revenue review](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/8), [#9 notebook contribution](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/9) |
+| Shreyansh Pankaj | `ShreyanshJoshi4444` | Delivery performance | [#3 delivery-performance validation](https://github.com/HazimAli07/grocery-delivery-analytics-pipeline/pull/3) |
 
-## Exact workflow for each member
+## Review evidence
 
-1. Clone the repository and create the branch listed above from `main`.
-2. Run/review the cells in the section you own.
-3. Make at least one substantive correction, validation, chart improvement, or explanation based on the Databricks output.
-4. Commit using your own GitHub identity, for example `Improve delivery distance validation and chart`.
-5. Push the branch and open a pull request describing the output you verified.
-6. The assigned reviewer checks the code/output and approves before Hazim merges.
+- Omar approved Sweta's merged PR #2 from `OmarLeoR`.
+- Hazim approved Shreyansh's merged PR #3 from `HazimAli07`.
+- Sweta approved Maheshwar's merged PR #6 and Omar's merged PRs #8 and #9 from `shwetachd1`.
+- PRs without formal approval remain visible as such; the history is not rewritten to manufacture missing reviews.
 
-A formatting-only edit or adding a name is not a meaningful contribution. The pull request should change analysis or validation and mention an observed result.
+## Final integration
+
+The final integration audit kept the original member commits in `main` and normalized the repository into one safe run path:
+
+- `01` through `03` are the only notebooks that create or replace project tables.
+- `04` through `09` are read-only owner validations aligned with the final Silver and Gold schemas.
+- Duplicate or partial notebook fragments were removed from the final tree after their genuine source commits were preserved in history.
+- The final README, report, dashboard instructions, metrics, and archive use the same verified results.
+
+This record intentionally distinguishes member-authored history from final corrections performed by Hazim during integration.

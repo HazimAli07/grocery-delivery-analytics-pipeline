@@ -1,6 +1,6 @@
 # Discount and Revenue Calculation Validation
 
-**Owner:** Omar Rodriguez
+**Owner:** Omar Leopoldo
 
 **Reviewer:** Sweta
 
